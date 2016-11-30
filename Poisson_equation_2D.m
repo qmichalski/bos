@@ -45,7 +45,7 @@ while maxerr > tol
     
     %Explicit iterative scheme with C.D in space (5-point difference)
 
-    p(i,j)=((dy^2*(pn(i+1,j)+pn(i-1,j)))+(dx^2*(pn(i,j+1)+pn(i,j-1)))-(b(i,j)*dx^2*dy*2))/(2*(dx^2+dy^2));
+    p(i,j)=((dy^2*(pn(i+1,j)+pn(i-1,j)))+(dx^2*(pn(i,j+1)+pn(i,j-1)))-(b(i,j)*dx^2*dy^2))/(2*(dx^2+dy^2));
     
 %Boundary conditions     
 %% Neumann's conditions   % dp/dx|end=dp/dx|end-1 
